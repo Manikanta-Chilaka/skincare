@@ -16,7 +16,6 @@ const Hero = () => {
   
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      // ✅ Hero image scroll animation
       setTimeout(() => {
         gsap.to(heroImgRef.current, {
           scrollTrigger: {
@@ -33,16 +32,15 @@ const Hero = () => {
         })
       }, 1300)
   
-      // ✅ m6 product image scroll animation
       gsap.to(m6Ref.current, {
         scrollTrigger: {
-          trigger: serumRef.current, // starts moving when serum section appears
-          start: 'top bottom',       // when top of serum hits bottom of viewport
-          end: 'top center',         // stops mid scroll into serum
+          trigger: serumRef.current, 
+          start: 'top bottom',      
+          end: 'top center',        
           scrub: true,
         },
-        x: 450,   // adjust for your serum layout
-        y: 500,   // adjust vertical drop
+        x: 450,   
+        y: 500,  
         scale: 1.5,
         rotate:10,
         ease: 'power2.out',
@@ -57,7 +55,6 @@ const Hero = () => {
   return (
     <>
       <div className="hero" ref={heroRef}>
-        {/* Navbar Animation */}
         <motion.div
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -66,7 +63,6 @@ const Hero = () => {
           <Navbar />
         </motion.div>
 
-        {/* Hero Content */}
         <div className="hero-content">
           <motion.h1
             initial={{ y: 100, opacity: 0 }}
@@ -99,7 +95,6 @@ const Hero = () => {
           />
         </div>
 
-        {/* Hero Left */}
         <motion.div
           className="hero-left"
           initial={{ x: -100, opacity: 0 }}
@@ -114,7 +109,6 @@ const Hero = () => {
           <button className="hero-btn">Shop Now</button>
         </motion.div>
 
-        {/* Hero Right */}
         <motion.div
           className="hero-right"
           initial={{ x: 100, opacity: 0 }}
@@ -132,7 +126,6 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      {/* Products Section */}
       <div className="products" ref={productsRef}>
         <h2>Our Products</h2>
         <div className="product-grid">
@@ -144,7 +137,6 @@ const Hero = () => {
           </div>
           <div className="product-item">
             <div className="product-img">
-              {/* <img src="/images/product2.png" alt="product 2" /> */}
             </div>
             <p>Hair Serum</p>
           </div>

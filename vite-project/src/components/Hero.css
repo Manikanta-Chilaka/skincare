@@ -44,9 +44,7 @@
     gap: 170px;
     margin-left: 100px;
   }
-  /* .span1{
-    padding-left: 140px; 
-  } */
+  
   .hero-img {
     position: absolute;
     width: 370px;
@@ -71,7 +69,6 @@
     color: #000;
   }
   
-  /* Button styling */
   .hero-btn {
    margin-top: 20px;
     background-color: #000;
@@ -97,11 +94,11 @@
   }
   
   .hero-card {
-    background: rgba(0, 0, 0, 0.6); /* translucent black background */
+    background: rgba(0, 0, 0, 0.6); 
     color: #fff;
     padding: 20px 30px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* drop shadow */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     max-width: 300px;
     height: 170px;
     text-align: center;
@@ -144,7 +141,6 @@
     padding: 100px 80px;
     text-align: center;
     font-family: 'ProximaNovaRegular', sans-serif;
-    /* background: #B3B7B8; */
     background: #1a1a1a;
     color: #fff;
   }
