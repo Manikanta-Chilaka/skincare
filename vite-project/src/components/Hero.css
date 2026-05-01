@@ -31,9 +31,9 @@
   background: #1c2a21;
 }
 
-/* ── HERO ───────────────────────────────────── */
+/* ── HERO ─────────────────────────────────────── */
 .hero-section {
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
   padding-top: 82px;
   background:
@@ -80,13 +80,13 @@
 /* ── HERO GRID ─────────────────────────────── */
 .hero-grid {
   width: min(1180px, calc(100% - 40px));
-  min-height: calc(100vh - 82px);
+  height: calc(100vh - 82px);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
   align-items: center;
-  gap: 42px;
-  padding: 24px 0 92px;
+  gap: 32px;
+  padding: 12px 0 56px;
   position: relative;
   z-index: 1;
 }
@@ -168,14 +168,14 @@
 /* ── HERO COPY ──────────────────────────────── */
 .hero-lede {
   max-width: 580px;
-  margin: 26px 0 0;
+  margin: 18px 0 0;
   color: #4b524c;
   font-size: 15px;
-  line-height: 1.65;
+  line-height: 1.6;
 }
 
 .hero-actions {
-  margin-top: 32px;
+  margin-top: 24px;
   display: flex;
   align-items: center;
   gap: 14px;
@@ -221,7 +221,7 @@
 
 /* ── HERO VISUAL ────────────────────────────── */
 .hero-visual {
-  min-height: 560px;
+  min-height: 440px;
   position: relative;
   display: grid;
   place-items: center;
@@ -230,7 +230,7 @@
 .hero-visual::before {
   content: '';
   position: absolute;
-  width: min(88vw, 520px);
+  width: min(75vw, 440px);
   aspect-ratio: 1;
   border-radius: 50%;
   background: #d7bda0;
@@ -239,7 +239,7 @@
 
 .hero-visual img {
   position: relative;
-  width: min(55vw, 350px);
+  width: min(48vw, 300px);
   border-radius: 50% 50% 48% 52% / 54% 54% 46% 46%;
   object-fit: cover;
   object-position: 35% center;
