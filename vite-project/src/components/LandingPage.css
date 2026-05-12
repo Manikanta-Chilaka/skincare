@@ -1317,19 +1317,23 @@
   .batches-grid { grid-template-columns: 1fr; gap: 16px; }
 
   /* ── VIDEO TESTIMONIALS — horizontal swipe (portrait cards) ── */
+  .video-testimonials-section { overflow: hidden; }
+  .vt-header { margin-bottom: 24px; }
   .video-grid {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    gap: 16px;
-    padding-bottom: 16px;
+    gap: 14px;
+    padding-bottom: 12px;
     scrollbar-width: none;
-    max-width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
   }
   .video-grid::-webkit-scrollbar { display: none; }
   .video-card {
-    min-width: min(220px, 65vw);
+    min-width: min(240px, 72vw);
+    max-width: 75vw;
     flex-shrink: 0;
     scroll-snap-align: start;
   }
@@ -1388,8 +1392,8 @@
 @media (max-width: 620px) {
 
   /* ── HERO ── */
-  .hero-section { min-height: 100svh; }
-  .hero-grid { padding: 24px 0 60px; gap: 24px; }
+  .hero-section { min-height: auto; }
+  .hero-grid { padding: 24px 0 32px; gap: 24px; }
   .split-heading-text { font-size: clamp(1.75rem, 6vw, 2.2rem); }
   .hero-lede { font-size: 14px; }
   .hero-visual { min-height: 200px; }
@@ -1408,7 +1412,7 @@
   }
 
   /* ── SECTIONS padding ── */
-  .signals-section,
+  .signals-section { padding-top: 32px; padding-bottom: 56px; }
   .abroad-section,
   .outcomes-section,
   .testimonials-section,
@@ -1419,7 +1423,7 @@
   .pricing-section,
   .faq-section { padding: 56px 0; }
 
-  .video-testimonials-section { padding: 56px 0 16px; }
+  .video-testimonials-section { padding: 36px 0 16px; }
   .about-section { padding: 16px 0 40px; }
 
   /* ── ABROAD ── */
