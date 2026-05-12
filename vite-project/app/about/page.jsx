@@ -1,9 +1,9 @@
 import AboutPage from '../../src/components/AboutPage'
 
 export const metadata = {
-  title: 'About Dr. Raga Deepthi — ForHerWellbeing',
+  title: 'About Dr Raga Deepthi Ediga — ForHerWellbeing',
   description:
-    'Meet Dr. Raga Deepthi, PhD in Pediatric Metabolism from Heidelberg University. 11 years in Germany, yoga-certified, and founder of ForHerWellbeing — root-cause wellness built for women.',
+    'Meet Dr Raga Deepthi Ediga, PhD in Pediatric Metabolism from Heidelberg University. 11 years in Germany, yoga-certified, and founder of ForHerWellbeing — root-cause wellness built for women.',
 }
 
 export default function About() {

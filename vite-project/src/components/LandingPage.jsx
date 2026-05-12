@@ -124,7 +124,7 @@ const pricingTiers = [
       'Deep-dive health history review',
       'Root-cause assessment',
       'Personalised program recommendation',
-      'Direct Q&A with Dr. Raga',
+      'Direct Q&A with Dr Raga Deepthi Ediga',
     ],
   },
   {
@@ -147,7 +147,7 @@ const pricingTiers = [
 const faqItems = [
   {
     q: 'How is this different from seeing a regular nutritionist?',
-    a: 'Most nutritionists create generic meal plans. Dr. Raga investigates the metabolic, hormonal, and gut root causes behind your symptoms — then builds a protocol specific to your body, your labs, and your lifestyle. Her PhD in Pediatric Metabolism and 11 years of clinical research in Germany shape every recommendation.',
+    a: 'Most nutritionists create generic meal plans. Dr Raga Deepthi Ediga investigates the metabolic, hormonal, and gut root causes behind your symptoms — then builds a protocol specific to your body, your labs, and your lifestyle. Her PhD in Pediatric Metabolism and 11 years of clinical research in Germany shape every recommendation.',
   },
   {
     q: 'What conditions does ForHerWellbeing treat?',
@@ -155,7 +155,7 @@ const faqItems = [
   },
   {
     q: 'Are sessions fully online? What about time zones?',
-    a: 'Yes, 100% online. Dr. Raga works with women across India, UK, Germany, USA, Australia, Canada, Netherlands, and Singapore. Sessions are scheduled around your time zone — morning, evening, or weekend slots are available.',
+    a: 'Yes, 100% online. Dr Raga Deepthi Ediga works with women across India, UK, Germany, USA, Australia, Canada, Netherlands, and Singapore. Sessions are scheduled around your time zone — morning, evening, or weekend slots are available.',
   },
   {
     q: 'What is the total cost for a full program?',
@@ -167,7 +167,7 @@ const faqItems = [
   },
   {
     q: 'I live abroad — can this still work for me?',
-    a: 'Absolutely. The abroad women program was built specifically for Indian women navigating cold climates, dietary shifts, Vitamin D deficiency, and healthcare systems unfamiliar with their conditions. Dr. Raga lived in Germany for 11 years and built this program from that experience.',
+    a: 'Absolutely. The abroad women program was built specifically for Indian women navigating cold climates, dietary shifts, Vitamin D deficiency, and healthcare systems unfamiliar with their conditions. Dr Raga Deepthi Ediga lived in Germany for 11 years and built this program from that experience.',
   },
   {
     q: 'Are sessions available in Telugu?',
@@ -462,7 +462,7 @@ const LandingPage = () => {
         <div className="hero-grid">
           <motion.div className="hero-copy" initial="hidden" animate="visible" transition={{ staggerChildren: 0.12, delayChildren: 0.1 }}>
             <motion.p className="eyebrow" variants={fadeUp}>
-              Dr. Raga Deepthi — science-backed holistic wellness
+              Dr Raga Deepthi Ediga — science-backed holistic wellness
             </motion.p>
             <h1 className="split-heading-text">
               {splitWords('You have tried enough. Let us find why your body is asking for help.')}
@@ -502,7 +502,7 @@ const LandingPage = () => {
               <span>Root cause</span>
               <strong>Care</strong>
             </div>
-            <img ref={heroBottleRef} src="/images/dr-raga.jpg" alt="Dr. Raga Deepthi" />
+            <img ref={heroBottleRef} src="/images/dr-raga.jpg" alt="Dr Raga Deepthi Ediga" />
             <div className="doctor-note tilt-card" onPointerMove={handleTilt} onPointerLeave={resetTilt}>
               <span>Next batch</span>
               <strong>20 women only</strong>
@@ -588,7 +588,7 @@ const LandingPage = () => {
           <div className="batches-header">
             <span className="section-kicker">Upcoming batches</span>
             <h2>Limited spots. Real results. Real women.</h2>
-            <p>Each cohort is capped at 20 women to ensure Dr. Raga can give each person genuine attention.</p>
+            <p>Each cohort is capped at 20 women to ensure Dr Raga Deepthi Ediga can give each person genuine attention.</p>
           </div>
           <div className="batches-grid">
             {batches.map((batch) => {
@@ -717,20 +717,20 @@ const LandingPage = () => {
       <section className="about-section" id="about">
         <div className="about-inner">
           <div className="about-image motion-card">
-            <img src="/images/dr-raga.jpg" alt="Dr. Raga Deepthi, PhD" />
+            <img src="/images/dr-raga.jpg" alt="Dr Raga Deepthi Ediga, PhD" />
           </div>
           <div className="about-content">
             <span className="section-kicker">About Dr Raga Deepthi Ediga</span>
             <h2>Science shaped by personal struggle.</h2>
             <p>
-              Dr. Raga Deepthi spent eleven years in Germany completing her PhD in Pediatric Metabolism
+              Dr Raga Deepthi Ediga spent eleven years in Germany completing her PhD in Pediatric Metabolism
               at Heidelberg University — all while navigating her own autoimmune challenges far from home.
               That experience of fighting a foreign healthcare system, managing hormonal disruption without
               familiar food or family, shaped the philosophy behind ForHerWellbeing: that women deserve
               root-cause care, not symptom management.
             </p>
             <p>
-              Returning to India, Dr. Raga built a practice that bridges rigorous clinical science with
+              Returning to India, Dr Raga Deepthi Ediga built a practice that bridges rigorous clinical science with
               deeply personal care. Her protocols draw from metabolic research, therapeutic yoga, and the
               lived experience of an Indian woman who has been exactly where her clients are. With over a
               decade of research training and yoga certifications from Rishikesh and Svyasa University,

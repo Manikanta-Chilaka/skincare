@@ -1,11 +1,14 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import { usePathname } from 'next/navigation'
 import './Navbar.css'
 
 const Navbar = () => {
   const navRef = useRef(null)
   const [menuOpen, setMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const a = (hash) => pathname === '/' ? hash : `/${hash}`
 
   useEffect(() => {
     const onScroll = () => {
@@ -33,19 +36,21 @@ const Navbar = () => {
 
       <nav className={`nav-overlay${menuOpen ? ' active' : ''}`}>
         <ul className="nav-links-mobile">
-          <li style={{ '--i': 0 }}><a href="#rituals" onClick={close}>Symptoms</a></li>
-          <li style={{ '--i': 1 }}><a href="#products" onClick={close}>Programs</a></li>
-          <li style={{ '--i': 2 }}><a href="#testimonials" onClick={close}>Stories</a></li>
-          <li style={{ '--i': 3 }}><a href="#quiz" onClick={close}>Quiz</a></li>
-          <li style={{ '--i': 4 }}><a href="#consultation" onClick={close} className="mobile-cta">Book Consultation</a></li>
+          <li style={{ '--i': 0 }}><a href={a('#rituals')} onClick={close}>Symptoms</a></li>
+          <li style={{ '--i': 1 }}><a href={a('#products')} onClick={close}>Programs</a></li>
+          <li style={{ '--i': 2 }}><a href="/stories" onClick={close}>Stories</a></li>
+          <li style={{ '--i': 3 }}><a href="/about" onClick={close}>About</a></li>
+          <li style={{ '--i': 4 }}><a href={a('#quiz')} onClick={close}>Quiz</a></li>
+          <li style={{ '--i': 5 }}><a href="mailto:forherwellbeing.official@gmail.com" onClick={close} className="mobile-cta">Book Consultation</a></li>
         </ul>
       </nav>
 
       <ul className="nav-links">
-        <li><a href="#rituals">Symptoms</a></li>
-        <li><a href="#products">Programs</a></li>
-        <li><a href="#testimonials">Stories</a></li>
-        <li><a href="#quiz">Quiz</a></li>
+        <li><a href={a('#rituals')}>Symptoms</a></li>
+        <li><a href={a('#products')}>Programs</a></li>
+        <li><a href="/stories">Stories</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href={a('#quiz')}>Quiz</a></li>
       </ul>
 
       <div className="nav-right">

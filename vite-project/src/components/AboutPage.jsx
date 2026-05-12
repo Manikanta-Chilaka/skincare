@@ -53,7 +53,7 @@ const AboutPage = () => {
             </a>
           </div>
           <div className="ap-hero-image">
-            <img src="/images/dr-raga.jpg" alt="Dr. Raga Deepthi, PhD" />
+            <img src="/images/dr-raga.jpg" alt="Dr Raga Deepthi Ediga, PhD" />
           </div>
         </div>
       </section>
@@ -64,7 +64,7 @@ const AboutPage = () => {
           <span className="ap-kicker">Her story</span>
           <h2>From Hyderabad to Heidelberg — and back with a purpose.</h2>
           <p>
-            Dr. Raga Deepthi grew up in Hyderabad, driven by a deep curiosity about human
+            Dr Raga Deepthi Ediga grew up in Hyderabad, driven by a deep curiosity about human
             biology. After completing her MSc in Animal Biotechnology at Hyderabad Central
             University, she moved to Germany in 2008 — alone, far from family, and into one
             of Europe's most demanding research environments.
@@ -72,7 +72,7 @@ const AboutPage = () => {
           <p>
             Her PhD at Heidelberg University focused on Pediatric Metabolism — studying how
             early metabolic imbalances shape lifelong health. But midway through her research,
-            Dr. Raga faced something she had not expected: her own body began to falter.
+            Dr Raga Deepthi Ediga faced something she had not expected: her own body began to falter.
             Autoimmune symptoms, fatigue, and hormonal disruption arrived without warning — in
             a country where she had no family, no familiar food, and a healthcare system that
             treated her as a collection of lab values rather than a whole person.
@@ -131,7 +131,7 @@ const AboutPage = () => {
         <div className="ap-cta-inner">
           <h2>Ready to find your root cause?</h2>
           <p>
-            A one-hour consultation with Dr. Raga — your full health history reviewed,
+            A one-hour consultation with Dr Raga Deepthi Ediga — your full health history reviewed,
             root causes investigated, and a clear path forward. ₹1,000. No surprises.
           </p>
           <a href="mailto:forherwellbeing.official@gmail.com" className="ap-cta ap-cta-large">

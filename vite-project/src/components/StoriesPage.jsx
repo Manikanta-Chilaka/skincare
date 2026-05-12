@@ -32,7 +32,7 @@ const testimonials = [
     name: 'REKHA',
     role: 'Thyroid & Metabolic Health Program',
     quote:
-      'My thyroid values have normalised after three months. The combination of diet changes and guided yoga made a difference I did not expect so soon. Dr. Raga follows up personally and that makes all the difference.',
+      'My thyroid values have normalised after three months. The combination of diet changes and guided yoga made a difference I did not expect so soon. Dr Raga Deepthi Ediga follows up personally and that makes all the difference.',
     highlight: 'Thyroid values normalised · 8 kg lost',
     stars: 5,
   },
@@ -48,7 +48,7 @@ const testimonials = [
     name: 'LAKSHMI',
     role: 'Metabolic Reset Program · USA',
     quote:
-      'Living in the US made it hard to find someone who understood Indian food, Indian body types, and what it means to be an Indian woman abroad. Dr. Raga does. The program is completely personalised and the support is real.',
+      'Living in the US made it hard to find someone who understood Indian food, Indian body types, and what it means to be an Indian woman abroad. Dr Raga Deepthi Ediga does. The program is completely personalised and the support is real.',
     highlight: 'Personalised care for life abroad',
     stars: 5,
   },
@@ -106,7 +106,7 @@ const StoriesPage = () => {
         <div className="sp-cta-inner">
           <h2>Ready to write your own story?</h2>
           <p>
-            Book a ₹1,000 consultation with Dr. Raga and find out exactly what your body needs.
+            Book a ₹1,000 consultation with Dr Raga Deepthi Ediga and find out exactly what your body needs.
           </p>
           <a href="mailto:forherwellbeing.official@gmail.com" className="sp-cta-btn">
             Book consultation — ₹1,000
