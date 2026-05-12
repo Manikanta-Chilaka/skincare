@@ -268,10 +268,30 @@
   }
 
   .nav-left span {
+    display: inline !important;
     font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
   }
 
   .btn-outline {
     display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav-left span {
+    font-size: 12px;
+    max-width: 140px;
+  }
+
+  .nav-left {
+    gap: 8px;
+  }
+
+  .nav-left .logo {
+    height: 36px;
   }
 }
