@@ -70,19 +70,19 @@ const videoTestimonials = [
     name: 'Rekha',
     program: 'Thyroid & Metabolic Health Program',
     highlight: 'Thyroid values normalised — lost 8 kg in 3 months',
-    src: '/videos/rekha-testimonial.mp4',
+    src: '/videos/testimonial_video_1.mp4',
   },
   {
     name: 'Sunitha',
     program: 'PCOS Reversal Program',
     highlight: 'Energy returned, weight reduced, PCOS symptoms reversed',
-    src: '/videos/sunitha-testimonial.mp4',
+    src: '/videos/testimonial_video_2.mp4',
   },
   {
     name: 'Divyasree',
     program: 'Diet Counselling · Hyderabad',
     highlight: 'Lost 15 kg and conceived naturally after following the plan',
-    src: '/videos/divyasree-testimonial.mp4',
+    src: '/videos/testimonial_video_3.mp4',
   },
 ]
 
@@ -140,21 +140,6 @@ const pricingTiers = [
       'WhatsApp community support',
       'Lab test interpretation',
       'Max 20 women per batch',
-    ],
-  },
-  {
-    name: 'Premium 1:1',
-    price: '₹50,000+',
-    duration: '3-month personalised',
-    cta: 'Apply for 1:1',
-    highlighted: false,
-    features: [
-      'Weekly 1:1 calls with Dr. Raga',
-      'Fully custom protocol',
-      'Priority WhatsApp access',
-      'Monthly lab review',
-      'Supplement guidance',
-      'Unlimited session support',
     ],
   },
 ]
@@ -714,9 +699,7 @@ const LandingPage = () => {
                     aria-label={`Video testimonial from ${vt.name}`}
                   >
                     <source src={vt.src} type="video/mp4" />
-                    {/* Replace src with real video files in /public/videos/ */}
                   </video>
-                  <div className="video-placeholder-label">Video testimonial coming soon</div>
                 </div>
                 <div className="video-caption">
                   <strong>{vt.name}</strong>
