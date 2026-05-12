@@ -401,7 +401,6 @@ const LandingPage = () => {
         { trigger: '.abroad-section', color: '#f0e4d4' },
         { trigger: '.outcomes-section', color: '#f6f1e8' },
         { trigger: '.video-testimonials-section', color: '#faf5ee' },
-        { trigger: '.testimonials-section', color: '#faf5ee' },
         { trigger: '.about-section', color: '#eae5dc' },
         { trigger: '.lead-magnet-section', color: '#f6f1e8' },
         { trigger: '.quiz-section', color: '#f6f1e8' },
@@ -416,14 +415,6 @@ const LandingPage = () => {
             const prev = i > 0 ? colorSections[i - 1].color : '#f6f1e8'
             gsap.to(pageRef.current, { backgroundColor: prev, duration: 0.7 })
           },
-        })
-      })
-
-      gsap.utils.toArray('.testimonial-card').forEach((card, i) => {
-        gsap.from(card, {
-          scrollTrigger: { trigger: card, start: 'top 88%' },
-          y: 50, opacity: 0, rotate: i % 2 === 0 ? -2 : 2,
-          duration: 0.9, delay: i * 0.12, ease: 'power3.out',
         })
       })
 
@@ -709,52 +700,27 @@ const LandingPage = () => {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ═══ WRITTEN TESTIMONIALS ═══════════════════ */}
-      <section className="testimonials-section" id="testimonials">
-        <div className="section-kicker">Written stories</div>
-        <h2 className="testimonials-heading">Women who chose themselves, and transformed.</h2>
-        <div className="testimonials-grid">
-          {testimonials.map((t) => (
-            <div
-              className="testimonial-card tilt-card"
-              key={t.name}
-              onPointerMove={handleTilt}
-              onPointerLeave={resetTilt}
+          <div className="vt-stories-link">
+            <a
+              href="/stories"
+              className="secondary-action magnetic-btn"
+              onPointerMove={handleMagnetic}
+              onPointerLeave={resetMagnetic}
             >
-              <div className="testimonial-stars" aria-label={`${t.stars} stars`}>
-                {'★'.repeat(t.stars)}
-              </div>
-              <blockquote>
-                <span className="quote-mark">&ldquo;</span>
-                {t.quote}
-              </blockquote>
-              <div className="testimonial-footer">
-                <div className="testimonial-avatar">{t.name.charAt(0)}</div>
-                <div>
-                  <strong>{t.name}</strong>
-                  <span>{t.role}</span>
-                </div>
-              </div>
-              <div className="testimonial-tags">
-                <span className="tag-highlight">✓ {t.highlight}</span>
-                <span className="tag-verified">✓ Verified Client</span>
-              </div>
-            </div>
-          ))}
+              Read all written client stories →
+            </a>
+          </div>
         </div>
       </section>
 
-      {/* ═══ ABOUT DR. RAGA ═════════════════════════ */}
+      {/* ═══ ABOUT DR RAGA DEEPTHI EDIGA ═══════════ */}
       <section className="about-section" id="about">
         <div className="about-inner">
           <div className="about-image motion-card">
             <img src="/images/dr-raga.jpg" alt="Dr. Raga Deepthi, PhD" />
           </div>
           <div className="about-content">
-            <span className="section-kicker">About Dr. Raga</span>
+            <span className="section-kicker">About Dr Raga Deepthi Ediga</span>
             <h2>Science shaped by personal struggle.</h2>
             <p>
               Dr. Raga Deepthi spent eleven years in Germany completing her PhD in Pediatric Metabolism
@@ -1012,7 +978,7 @@ const LandingPage = () => {
       <section className="consult-section" id="consultation">
         <div>
           <span className="section-kicker">Free. Personal. Confidential.</span>
-          <h2>Ask Dr. Raga directly, or begin with a consultation.</h2>
+          <h2>Ask Dr Raga Deepthi Ediga directly, or begin with a consultation.</h2>
         </div>
         <a
           className="primary-action magnetic-btn"
@@ -1058,8 +1024,8 @@ const LandingPage = () => {
             </div>
             <div className="footer-col">
               <strong>Resources</strong>
-              <a href="#about">About Dr. Raga</a>
-              <a href="#testimonials">Client Stories</a>
+              <a href="/about">About Dr Raga Deepthi Ediga</a>
+              <a href="/stories">Client Stories</a>
               <a href="#free-guide">Free PCOS Guide</a>
               <a href="#faq">FAQ</a>
               <a href="#pricing">Pricing</a>

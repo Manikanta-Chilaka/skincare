@@ -69,7 +69,7 @@
 
 .nav-links {
   list-style: none;
-  gap: 30px;
+  gap: 16px;
   padding: 0;
   margin: 0;
 }
@@ -78,7 +78,7 @@
 .btn {
   color: inherit;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   cursor: pointer;
 }
@@ -233,13 +233,32 @@
 }
 
 /* ── RESPONSIVE ────────────────────────────── */
+
+/* Hide CTA buttons early so 5 nav links have room at medium widths */
+@media (max-width: 1060px) {
+  .nav-right {
+    display: none;
+  }
+}
+
 @media (max-width: 820px) {
   .nav-links {
     display: none;
   }
 
+  .nav-right {
+    display: none;
+  }
+
   .hamburger {
     display: flex;
+  }
+
+  /* Always show a light bg on mobile so hamburger bars are readable */
+  .navbar:not(.scrolled) {
+    background: rgba(246, 241, 232, 0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
 }
 
@@ -248,7 +267,10 @@
     width: calc(100% - 20px);
   }
 
-  .nav-left span,
+  .nav-left span {
+    font-size: 13px;
+  }
+
   .btn-outline {
     display: none;
   }

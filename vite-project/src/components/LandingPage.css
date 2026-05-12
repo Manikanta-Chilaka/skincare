@@ -333,6 +333,7 @@
 /* ── PROGRAMS ──────────────────────────────────── */
 .programs-section {
   width: 100%;
+  max-width: 100vw;
   background: #1d2a22;
   color: #fffaf1;
   padding: 72px 0;
@@ -563,9 +564,9 @@
 }
 .batch-cta:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.25); }
 
-/* ── VIDEO TESTIMONIALS ─────────────────────────── */
+/* ── VIDEO TESTIMONIALS ─────────────────────── */
 .video-testimonials-section {
-  padding: 80px 0;
+  padding: 80px 0 20px;
 }
 .vt-inner {
   width: min(1180px, calc(100% - 40px));
@@ -573,6 +574,7 @@
 }
 .vt-header { max-width: 600px; margin-bottom: 48px; }
 .vt-header p { margin: 14px 0 0; color: #555d57; font-size: 15px; line-height: 1.6; }
+.vt-stories-link { margin-top: 32px; display: flex; justify-content: center; }
 .video-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -692,9 +694,9 @@
   font-weight: 700;
 }
 
-/* ── ABOUT DR. RAGA ─────────────────────────────── */
+/* ── ABOUT DR RAGA DEEPTHI EDIGA ──────────── */
 .about-section {
-  padding: 80px 0;
+  padding: 20px 0 40px;
 }
 .about-inner {
   width: min(1180px, calc(100% - 40px));
@@ -750,7 +752,7 @@
 /* ── LEAD MAGNET ────────────────────────────────── */
 .lead-magnet-section {
   background: #1d2a22;
-  padding: 80px 0;
+  padding: 60px 0 80px;
 }
 .lead-inner {
   width: min(1100px, calc(100% - 40px));
@@ -1275,7 +1277,7 @@
   .hero-visual::before { width: min(78vw, 360px); }
 
   /* ── PROGRAMS — horizontal swipe ── */
-  .programs-section { overflow: visible; }  /* allow scroll to escape the section */
+  .programs-section { overflow: hidden; }
   .programs-track {
     flex-direction: row;
     overflow-x: auto;
@@ -1284,13 +1286,23 @@
     padding: 0 20px 16px;
     scrollbar-width: none;
     will-change: auto;
+    max-width: 100vw;
+    box-sizing: border-box;
   }
   .programs-track::-webkit-scrollbar { display: none; }
   .program-card {
-    min-width: min(300px, 80vw);
+    min-width: min(280px, 78vw);
+    max-width: 80vw;
+    min-height: 240px;
     flex-shrink: 0;
     scroll-snap-align: start;
+    padding: 24px 22px;
   }
+  .program-card h3 {
+    margin: 8px 0 12px;
+    font-size: 1.1rem;
+  }
+  .program-card p { font-size: 13px; }
 
   /* ── SIGNALS ── */
   .split-heading { grid-template-columns: 1fr; gap: 20px; }
@@ -1326,7 +1338,8 @@
   .testimonials-grid { grid-template-columns: 1fr; }
 
   /* ── ABOUT ── */
-  .about-inner { grid-template-columns: 1fr; gap: 36px; }
+  .about-inner { grid-template-columns: 1fr; gap: 24px; }
+  .about-content { order: -1; }
   .about-image {
     aspect-ratio: 4/3;
     max-height: 320px;
@@ -1402,11 +1415,12 @@
   .quiz-section { padding-top: 56px; padding-bottom: 56px; }
 
   .batches-section,
-  .video-testimonials-section,
-  .about-section,
   .lead-magnet-section,
   .pricing-section,
   .faq-section { padding: 56px 0; }
+
+  .video-testimonials-section { padding: 56px 0 16px; }
+  .about-section { padding: 16px 0 40px; }
 
   /* ── ABROAD ── */
   .abroad-points { grid-template-columns: 1fr; }
